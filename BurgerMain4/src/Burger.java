@@ -1,4 +1,8 @@
 public class Burger {
+    /* Измененный вариант прогрмаммы, которая находится в папке
+    BurgerMain3. В этой программе для определения вида бургера
+    в зависимости от количества такого ингредиента, как мясо,
+    использовал переменную типа boolean. */
     String burgerName;
     String bun;
     String meat;
@@ -7,15 +11,17 @@ public class Burger {
     String mayonnaise;
     static char ch = 96;
     String result;
+    boolean isDoubleMeat;
 
     public String cookBurgerWithMeat() {
-        if (meat.equals("двойное мясо")) {
+        isDoubleMeat = meat.equals("двойное мясо");
+        if (isDoubleMeat) {
             burgerName = "с двойным мясом";
             ++ch;
             result = ch + ". " + burgerName + " (" + bun + ", " + meat + ", " + cheese
                     + ", " + greens + ", " + mayonnaise + ")";
         }
-        if (meat.equals("мясо")) {
+        if (!isDoubleMeat) {
             burgerName = "обычный бургер";
             ++ch;
             result = ch + ". " + burgerName + " (" + bun + ", " + meat + ", " + cheese
@@ -24,9 +30,6 @@ public class Burger {
         return result;
     }
 
-    // В данной программе использовал метод, но при этом создал два конструктора,
-    // так как на вход передается одинаковое количество параметров, каждый из которых относится
-    // к классу String
     public Burger(String bun, String meat, String cheese, String greens, String mayonnaise) {
         this.bun = bun;
         this.meat = meat;
