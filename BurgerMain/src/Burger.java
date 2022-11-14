@@ -6,9 +6,10 @@ public class Burger {
     String cheese;
     String greens;
     String mayonnaise;
-    static char ch = 'a';
+    static char ch = 96;
 
     public Burger(String bun, String meat1, String cheese, String greens, String mayonnaise) {
+        ++ch;
         this.bun = bun;
         this.meat1 = meat1;
         this.cheese = cheese;
@@ -25,7 +26,7 @@ public class Burger {
         this.meat1 = meat1;
         this.cheese = cheese;
         this.greens = greens;
-        burgerName = "диетический  бургер";
+        burgerName = "диетический бургер";
         System.out.println(ch + ". " + burgerName + " (" + bun + ", " + meat1 + ", " + cheese
                 + ", " + greens + ")");
     }

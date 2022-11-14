@@ -8,9 +8,10 @@ public class Burger {
     String cheese;
     String greens;
     String mayonnaise;
-    static char ch = 97;
+    static char ch = 96;
 
     public Burger(String bun, String meat1, String cheese, String greens, String mayonnaise) {
+        ++ch;
         this.bun = bun;
         this.meat1 = meat1;
         this.cheese = cheese;
@@ -25,7 +26,7 @@ public class Burger {
         this.meat1 = meat1;
         this.cheese = cheese;
         this.greens = greens;
-        burgerName = "диетический  бургер";
+        burgerName = "диетический бургер";
     }
 
     public Burger(String bun, String meat1, String meat2, String cheese, String greens, String mayonnaise) {
