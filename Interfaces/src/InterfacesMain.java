@@ -2,13 +2,13 @@ public class InterfacesMain {
     public static void main(String[] args) {
         Androids androids = new Androids();
         androids.call();
-        androids.sms();
+        androids.shortMessageService();
         androids.internet();
         androids.linuxKernel();
         IPhones iPhones = new IPhones();
         iPhones.call();
-        iPhones.sms();
+        iPhones.shortMessageService();
         iPhones.internet();
-        iPhones.iOS();
+        iPhones.iOperatingSystem();
     }
 }

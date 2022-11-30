@@ -1,4 +1,4 @@
-public class IPhones implements Smartphones, IOS {
+public class IPhones implements Smartphones, IOperatingSystem {
     @Override
     public void call() {
         System.out.println("Смартфоны на базе операционной системы " +
@@ -6,9 +6,9 @@ public class IPhones implements Smartphones, IOS {
     }
 
     @Override
-    public void sms() {
+    public void shortMessageService() {
         System.out.println("Смартфоны на базе операционной системы iOS " +
-                "используют для отправки и получения sms.");
+                "используют для отправки и получения SMS.");
     }
 
     @Override
@@ -18,8 +18,8 @@ public class IPhones implements Smartphones, IOS {
     }
 
     @Override
-    public void iOS() {
+    public void iOperatingSystem() {
         System.out.println("iOS - операционная система, которая " +
-                "сначала была разработана для iPhone.");
+                "первоначально была разработана для iPhone.");
     }
 }

@@ -1,5 +1,5 @@
 public interface Smartphones {
     void call();
-    void sms();
+    void shortMessageService();
     void internet();
 }

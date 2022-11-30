@@ -1,4 +1,4 @@
-public class Androids implements Smartphones, LinuxOS {
+public class Androids implements Smartphones, LinuxOperatingSystem {
     @Override
     public void call() {
         System.out.println("Смартфоны на базе операционной системы " +
@@ -6,9 +6,9 @@ public class Androids implements Smartphones, LinuxOS {
     }
 
     @Override
-    public void sms() {
+    public void shortMessageService() {
         System.out.println("Смартфоны на базе операционной системы Android " +
-                "используют для отправки и получения sms.");
+                "используют для отправки и получения SMS.");
     }
 
     @Override
