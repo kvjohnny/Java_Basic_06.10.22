@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainDrinksMachine {
+public class DrinksMachineMain {
     public static void main(String[] args) {
         System.out.println("You can buy only the following drinks: "); // В данной программе при инициализации
         System.out.println("coffee - 50 UAH"); // переменных использвал целочисленные значения.

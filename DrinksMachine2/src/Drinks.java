@@ -1,6 +1,6 @@
 import java.math.BigDecimal;
 
-public class Drinks2 {
+public class Drinks {
     public static final BigDecimal COFFEE_PRICE = new BigDecimal("50.20");
     public static final BigDecimal TEA_PRICE = new BigDecimal("35.50");
     public static final BigDecimal LEMONADE_PRICE = new BigDecimal("40.55");

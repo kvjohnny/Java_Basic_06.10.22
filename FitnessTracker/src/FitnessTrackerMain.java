@@ -1,4 +1,4 @@
-public class MainFitnessTracker {
+public class FitnessTrackerMain {
     public static void main(String[] args) {
         AccountInfo accountInfo1 = new AccountInfo("Александр", "Степаненко",
                 20, "июня", 1983, "alex_stepanenko@gmail.com",

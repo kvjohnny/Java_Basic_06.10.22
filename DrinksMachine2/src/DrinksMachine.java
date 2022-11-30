@@ -1,4 +1,4 @@
-enum DrinksMachine2 {
+enum DrinksMachine {
     COFFEE,
     TEA,
     LEMONADE,
